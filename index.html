@@ -194,7 +194,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -204,7 +204,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -250,7 +250,7 @@
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/25/nodejs/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="John Doe">
+    <meta itemprop="name" content="XL">
     <meta itemprop="description" content="">
     <meta itemprop="image" content="/images/avatar.gif">
   </span>
@@ -273,7 +273,7 @@
               
                 
                 <a class="post-title-link" href="/2017/02/25/nodejs/" itemprop="url">
-                  Unbenannt
+                  git+nodejs快速搭建web静态服务器
                 </a>
               
             
@@ -287,7 +287,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-25T12:09:15+08:00">
                 2017-02-25
@@ -327,18 +327,13 @@
       
         
           
-            <hr>
-<h2 id="title-git-nodejs快速搭建web静态服务器"><a href="#title-git-nodejs快速搭建web静态服务器" class="headerlink" title="title:git+nodejs快速搭建web静态服务器"></a>title:git+nodejs快速搭建web静态服务器</h2><p>###安装<a href="https://nodejs.org/en/" target="_blank" rel="external">nodejs</a>点击可进入官网自行下载进行安装。</p>
-<p>###安装git bash百度自行下载。</p>
-<p>###安装npm:打开git bash 输入以下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g npm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure></p>
-<p>###安装nvm<br>注意！！！安装以上4个用默认安装路径</p>
+            <h3 id="安装nodejs点击可进入官网自行下载进行安装。"><a href="#安装nodejs点击可进入官网自行下载进行安装。" class="headerlink" title="安装nodejs点击可进入官网自行下载进行安装。"></a>安装<a href="https://nodejs.org/en/" target="_blank" rel="external">nodejs</a>点击可进入官网自行下载进行安装。</h3><h3 id="安装git-bash百度自行下载。"><a href="#安装git-bash百度自行下载。" class="headerlink" title="安装git bash百度自行下载。"></a>安装git bash百度自行下载。</h3><h3 id="安装npm-打开git-bash-输入以下代码"><a href="#安装npm-打开git-bash-输入以下代码" class="headerlink" title="安装npm:打开git bash 输入以下代码"></a>安装npm:打开git bash 输入以下代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g npm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
+<h3 id="安装nvm"><a href="#安装nvm" class="headerlink" title="安装nvm"></a>安装nvm</h3><p>注意！！！安装以上4个用默认安装路径</p>
 <p>以上除了npm和nodejs其他的2个安装包可在以下地址git clone “Web-static-server”文件夹<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://github.com/xuliqwertyu</div></pre></td></tr></table></figure></p>
-<p>####查看是否安装成功可以在git bash中敲入以下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node -v //检测node是否安装成功，若成功则出现版本号，注意-v之前有空格</div></pre></td></tr></table></figure>
+<h4 id="查看是否安装成功可以在git-bash中敲入以下代码："><a href="#查看是否安装成功可以在git-bash中敲入以下代码：" class="headerlink" title="查看是否安装成功可以在git bash中敲入以下代码："></a>查看是否安装成功可以在git bash中敲入以下代码：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node -v //检测node是否安装成功，若成功则出现版本号，注意-v之前有空格</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm -v //检测npm是否安装成功，若成功则出现版本号，注意-v之前有空格</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm -v //检测npm是否安装成功，若成功则出现版本号，注意-v之前有空格</div></pre></td></tr></table></figure>
-<p>###初始化</p>
-<ul>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><ul>
 <li>在github上clone一个项目文件夹下来<ul>
 <li>在该文件夹下右击打开git bash Here</li>
 <li>输入git config –global user.email’邮箱’ //设置全局git提交邮箱</li>
@@ -363,82 +358,10 @@
 </li>
 </ul>
 <p>至此web静态服务器搭建完成，只要在该项目文件夹根目录打开git bash 输入gulp watcher启动静态服务器，再在浏览器输入localhost:9999即可。将9999改为9888为实时更新。</p>
-<p>##gulpfile.js<br>      //引入gulp<br>    var gulp=require(‘gulp’);<br>    //引入gulp-stylus插件<br>    var stylus=require(‘gulp-stylus’)<br>    //创建一个编译stylus的任务<br>    gulp.task(‘stylus’,function(){<br>    //获取要编译的文件<br>    //指定一个文件<br>    //gulp.src(‘./stylus/index.styl’)<br>    //指定多个文件<br>    //gulp.src([‘./stylus/index.styl’,’./stylus/css.styl’])<br>    //指定一个目录下所有(不包含子目录)<br>    //gulp.src(‘./stylus/<em>.styl’)<br>    //指定一个目录及所有子目录下的文件<br>    return gulp.src(‘./stylus/**/</em>.styl’)<br>        //执行stylus编译<br>        .pipe(stylus())<br>        //输出编译后的文件<br>        .pipe(gulp.dest(‘./public/css’))<br>    })<br>    //创建一个default任务<br>    gulp.task(‘logs’,function(){<br>    console.log(‘this is log’)<br>    })<br>    gulp.task(‘default’,function(){<br>    console.log(‘this default’)<br>    });<br>    gulp.task(‘es6’,function(){<br>    console.log(‘this es6’)<br>    });<br>    gulp.task(‘css’,function(){<br>    console.log(‘this css’)<br>    });<br>    gulp.task(‘all’,[‘logs’,’es6’,’css’],function(){<br>    console.log(‘this is all’)<br>    });</p>
-<pre><code>gulp.task(&apos;minijs&apos;,[&apos;es6&apos;],function(){
-console.log(&apos;this is minijs&apos;)
-})    
-//先执行es6，后执行minijs
-//
-var minifycss=require(&apos;gulp-minify-css&apos;)
-
-gulp.task(&apos;minifycss&apos;,[&apos;stylus&apos;],function(){
-return gulp.src(&apos;./public/css/**/*.css&apos;)
-        .pipe(minifycss())
-        .pipe(gulp.dest(&apos;./public/mincss&apos;))
-})
-var uglify=require(&apos;gulp-uglify&apos;)
-gulp.task(&apos;uglify&apos;,function(){
-return gulp.src(&apos;./public/js/**/*.js&apos;)
-        .pipe(minifycss())
-        .pipe(gulp.dest(&apos;./public/minjs&apos;))
-})
-
-gulp.task(&apos;watcher&apos;,[&apos;stylus&apos;, &apos;browserSync&apos;],function(){
- gulp.watch(&apos;./public/js/**/*.js&apos;,[&apos;uglify&apos;]);
- gulp.watch(&apos;./stylus/**/*.styl&apos;,[&apos;stylus&apos;]);
- gulp.watch([
-         &apos;./public/css/**/*.css&apos;,
-         &apos;./public/minjs/**/*.js&apos;
- ]).on(&apos;change&apos;,function(){
-         reload();
- })
-})
-
-var nodemon=require(&apos;gulp-nodemon&apos;)
-gulp.task(&apos;nodemon&apos;,function(ab){
-var ft=false;
-return nodemon({
-script:&apos;./server.js&apos;
-}).on(&apos;start&apos;,function(){
-    if(!ft){
-        ab();
-        ft=true;
-    }
-})
-})
-var browserSync=require(&apos;browser-sync&apos;).create()
-var reload=browserSync.reload
-
-gulp.task(&apos;browserSync&apos;,[&apos;nodemon&apos;],function(){
-    browserSync.init({
-    proxy:{
-        target:&apos;http://127.0.0.1:9999&apos;
-    },
-    files:[&apos;*&apos;],
-    port:9888,
-    open:false
-    })
-})
-</code></pre><p>##package.json<br>    {<br>    “name”: “my-c”,<br>    “version”: “0.0.1”,<br>    “description”: “”,<br>    “main”: “app.js”,<br>    “scripts”: {<br>      “test”: “echo \”Error: no test specified\” &amp;&amp; exit 1”<br>    },<br>    “repository”: {<br>      “type”: “git”,<br>      “url”: “<a href="https://code.aliyun.com/walkingin/CyyAPP.git" target="_blank" rel="external">https://code.aliyun.com/walkingin/CyyAPP.git</a>“<br>    },<br>    “author”: “xl”,<br>    “license”: “ISC”,<br>    “dependencies”: {<br>      “express”: “^4.14.0”,<br>      “sha1”: “^1.1.1”<br>    },<br>    “devDependencies”: {<br>      “browser-sync”: “^2.18.5”,<br>      “gulp”: “^3.9.1”,<br>      “gulp-browser-sync”: “0.0.4”,<br>      “gulp-minify-css”: “^1.2.4”,<br>      “gulp-nodemon”: “^2.2.1”,<br>      “gulp-stylus”: “^2.6.0”,<br>      “gulp-uglify”: “^2.0.0”<br>    }<br>      }</p>
-<p>##server.js<br>    var path =require(‘path’);<br>    var express =require(‘express’);<br>    var app=express();<br>    var viewsPath=path.join(<strong>dirname,’views’);<br>    app.use(‘/‘,express.static(viewsPath));<br>    var publicPath=path.join(</strong>dirname,’public’);<br>    app.use(‘/public’,express.static(publicPath));<br>    app.listen(9999,function(){<br>        console.log(‘server run at port 9999’);<br>    })<br>    var sha1 = require(“sha1”);<br>        //定义验证接口<br>        app.use(‘/wexin’, function(req, res){<br>            //获取get传递数据<br>            var obj = req.query;<br>            console.log(“weixin”, obj);<br>            //将数据添加到一个数组<br>            var arr = [“tasktest”, obj.timestamp, obj.nonce];<br>            //排序<br>            arr.sort();</p>
-<pre><code>        //拼接字符串，并进行 sha1 加密
-        var str = sha1(arr.join(&quot;&quot;));
-        console.log(&apos;sha1   &apos;, str);
-
-        console.log(&apos;signature&apos;, obj.signature === str)
-        //匹配是否是微信请求
-        if( obj.signature === str){
-            //成功返回 echostr 随机字符串
-            res.send(obj.echostr).end();
-        }else{
-            res.send(&quot;验证失败&quot;).end();
-        }
-    });
-
-
-module.exports=app;
-</code></pre><p>##以上配置文件在<a href="https://github.com/xuliqwertyu中的“Web-static-server”文件夹都有" target="_blank" rel="external">https://github.com/xuliqwertyu中的“Web-static-server”文件夹都有</a></p>
-
+<h2 id="gulpfile-js"><a href="#gulpfile-js" class="headerlink" title="gulpfile.js"></a>gulpfile.js</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div></pre></td><td class="code"><pre><div class="line">//引入gulp</div><div class="line">var gulp=require(&apos;gulp&apos;);</div><div class="line">//引入gulp-stylus插件</div><div class="line">var stylus=require(&apos;gulp-stylus&apos;)</div><div class="line">//创建一个编译stylus的任务</div><div class="line">gulp.task(&apos;stylus&apos;,function()&#123;</div><div class="line">//获取要编译的文件</div><div class="line">//指定一个文件</div><div class="line">//gulp.src(&apos;./stylus/index.styl&apos;)</div><div class="line">//指定多个文件</div><div class="line">//gulp.src([&apos;./stylus/index.styl&apos;,&apos;./stylus/css.styl&apos;])</div><div class="line">//指定一个目录下所有(不包含子目录)</div><div class="line">//gulp.src(&apos;./stylus/*.styl&apos;)</div><div class="line">//指定一个目录及所有子目录下的文件</div><div class="line">return gulp.src(&apos;./stylus/**/*.styl&apos;)</div><div class="line">	//执行stylus编译</div><div class="line">	.pipe(stylus())</div><div class="line">	//输出编译后的文件</div><div class="line">	.pipe(gulp.dest(&apos;./public/css&apos;))</div><div class="line">&#125;)</div><div class="line">//创建一个default任务</div><div class="line">gulp.task(&apos;logs&apos;,function()&#123;</div><div class="line">console.log(&apos;this is log&apos;)</div><div class="line">&#125;)</div><div class="line">gulp.task(&apos;default&apos;,function()&#123;</div><div class="line">console.log(&apos;this default&apos;)</div><div class="line">&#125;);</div><div class="line">gulp.task(&apos;es6&apos;,function()&#123;</div><div class="line">console.log(&apos;this es6&apos;)</div><div class="line">&#125;);</div><div class="line">gulp.task(&apos;css&apos;,function()&#123;</div><div class="line">console.log(&apos;this css&apos;)</div><div class="line">&#125;);</div><div class="line">gulp.task(&apos;all&apos;,[&apos;logs&apos;,&apos;es6&apos;,&apos;css&apos;],function()&#123;</div><div class="line">console.log(&apos;this is all&apos;)</div><div class="line">&#125;);</div><div class="line"></div><div class="line">gulp.task(&apos;minijs&apos;,[&apos;es6&apos;],function()&#123;</div><div class="line">console.log(&apos;this is minijs&apos;)</div><div class="line">&#125;)	</div><div class="line">//先执行es6，后执行minijs</div><div class="line">//</div><div class="line">var minifycss=require(&apos;gulp-minify-css&apos;)</div><div class="line"></div><div class="line">gulp.task(&apos;minifycss&apos;,[&apos;stylus&apos;],function()&#123;</div><div class="line">return gulp.src(&apos;./public/css/**/*.css&apos;)</div><div class="line">		.pipe(minifycss())</div><div class="line">		.pipe(gulp.dest(&apos;./public/mincss&apos;))</div><div class="line">&#125;)</div><div class="line">var uglify=require(&apos;gulp-uglify&apos;)</div><div class="line">gulp.task(&apos;uglify&apos;,function()&#123;</div><div class="line">return gulp.src(&apos;./public/js/**/*.js&apos;)</div><div class="line">		.pipe(minifycss())</div><div class="line">		.pipe(gulp.dest(&apos;./public/minjs&apos;))</div><div class="line">&#125;)</div><div class="line"></div><div class="line">gulp.task(&apos;watcher&apos;,[&apos;stylus&apos;, &apos;browserSync&apos;],function()&#123;</div><div class="line"> gulp.watch(&apos;./public/js/**/*.js&apos;,[&apos;uglify&apos;]);</div><div class="line"> gulp.watch(&apos;./stylus/**/*.styl&apos;,[&apos;stylus&apos;]);</div><div class="line"> gulp.watch([</div><div class="line"> 		&apos;./public/css/**/*.css&apos;,</div><div class="line"> 		&apos;./public/minjs/**/*.js&apos;</div><div class="line"> ]).on(&apos;change&apos;,function()&#123;</div><div class="line"> 		reload();</div><div class="line"> &#125;)</div><div class="line">&#125;)</div><div class="line"></div><div class="line">var nodemon=require(&apos;gulp-nodemon&apos;)</div><div class="line">gulp.task(&apos;nodemon&apos;,function(ab)&#123;</div><div class="line">var ft=false;</div><div class="line">return nodemon(&#123;</div><div class="line">script:&apos;./server.js&apos;</div><div class="line">&#125;).on(&apos;start&apos;,function()&#123;</div><div class="line">	if(!ft)&#123;</div><div class="line">		ab();</div><div class="line">		ft=true;</div><div class="line">	&#125;</div><div class="line">&#125;)</div><div class="line">&#125;)</div><div class="line">var browserSync=require(&apos;browser-sync&apos;).create()</div><div class="line">var reload=browserSync.reload</div><div class="line"></div><div class="line">gulp.task(&apos;browserSync&apos;,[&apos;nodemon&apos;],function()&#123;</div><div class="line">	browserSync.init(&#123;</div><div class="line">	proxy:&#123;</div><div class="line">		target:&apos;http://127.0.0.1:9999&apos;</div><div class="line">	&#125;,</div><div class="line">	files:[&apos;*&apos;],</div><div class="line">	port:9888,</div><div class="line">	open:false</div><div class="line">	&#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h2 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">   &quot;name&quot;: &quot;my-c&quot;,</div><div class="line">   &quot;version&quot;: &quot;0.0.1&quot;,</div><div class="line">   &quot;description&quot;: &quot;&quot;,</div><div class="line">   &quot;main&quot;: &quot;app.js&quot;,</div><div class="line">   &quot;scripts&quot;: &#123;</div><div class="line">     &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</div><div class="line">   &#125;,</div><div class="line">   &quot;repository&quot;: &#123;</div><div class="line">     &quot;type&quot;: &quot;git&quot;,</div><div class="line">     &quot;url&quot;: &quot;https://code.aliyun.com/walkingin/CyyAPP.git&quot;</div><div class="line">   &#125;,</div><div class="line">   &quot;author&quot;: &quot;xl&quot;,</div><div class="line">   &quot;license&quot;: &quot;ISC&quot;,</div><div class="line">   &quot;dependencies&quot;: &#123;</div><div class="line">     &quot;express&quot;: &quot;^4.14.0&quot;,</div><div class="line">     &quot;sha1&quot;: &quot;^1.1.1&quot;</div><div class="line">   &#125;,</div><div class="line">   &quot;devDependencies&quot;: &#123;</div><div class="line">     &quot;browser-sync&quot;: &quot;^2.18.5&quot;,</div><div class="line">     &quot;gulp&quot;: &quot;^3.9.1&quot;,</div><div class="line">     &quot;gulp-browser-sync&quot;: &quot;0.0.4&quot;,</div><div class="line">     &quot;gulp-minify-css&quot;: &quot;^1.2.4&quot;,</div><div class="line">     &quot;gulp-nodemon&quot;: &quot;^2.2.1&quot;,</div><div class="line">     &quot;gulp-stylus&quot;: &quot;^2.6.0&quot;,</div><div class="line">     &quot;gulp-uglify&quot;: &quot;^2.0.0&quot;</div><div class="line">   &#125;</div><div class="line"> 	&#125;</div></pre></td></tr></table></figure>
+<h2 id="server-js"><a href="#server-js" class="headerlink" title="server.js"></a>server.js</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">var path =require(&apos;path&apos;);</div><div class="line">   var express =require(&apos;express&apos;);</div><div class="line">   var app=express();</div><div class="line">   var viewsPath=path.join(__dirname,&apos;views&apos;);</div><div class="line">   app.use(&apos;/&apos;,express.static(viewsPath));</div><div class="line">   var publicPath=path.join(__dirname,&apos;public&apos;);</div><div class="line">   app.use(&apos;/public&apos;,express.static(publicPath));</div><div class="line">   app.listen(9999,function()&#123;</div><div class="line">   	console.log(&apos;server run at port 9999&apos;);</div><div class="line">   &#125;)</div><div class="line">   var sha1 = require(&quot;sha1&quot;);</div><div class="line">       //定义验证接口</div><div class="line">       app.use(&apos;/wexin&apos;, function(req, res)&#123;</div><div class="line">           //获取get传递数据</div><div class="line">           var obj = req.query;</div><div class="line">           console.log(&quot;weixin&quot;, obj);</div><div class="line">           //将数据添加到一个数组</div><div class="line">           var arr = [&quot;tasktest&quot;, obj.timestamp, obj.nonce];</div><div class="line">           //排序</div><div class="line">           arr.sort();</div><div class="line"></div><div class="line">           //拼接字符串，并进行 sha1 加密</div><div class="line">           var str = sha1(arr.join(&quot;&quot;));</div><div class="line">           console.log(&apos;sha1   &apos;, str);</div><div class="line"></div><div class="line">           console.log(&apos;signature&apos;, obj.signature === str)</div><div class="line">           //匹配是否是微信请求</div><div class="line">           if( obj.signature === str)&#123;</div><div class="line">               //成功返回 echostr 随机字符串</div><div class="line">               res.send(obj.echostr).end();</div><div class="line">           &#125;else&#123;</div><div class="line">               res.send(&quot;验证失败&quot;).end();</div><div class="line">           &#125;</div><div class="line">       &#125;);</div><div class="line"></div><div class="line"></div><div class="line">   module.exports=app;</div></pre></td></tr></table></figure>
+<h2 id="以上配置文件在-https-github-com-xuliqwertyu-中的“Web-static-server”文件夹都有"><a href="#以上配置文件在-https-github-com-xuliqwertyu-中的“Web-static-server”文件夹都有" class="headerlink" title="以上配置文件在(https://github.com/xuliqwertyu)中的“Web-static-server”文件夹都有"></a>以上配置文件在(<a href="https://github.com/xuliqwertyu)中的“Web-static-server”文件夹都有" target="_blank" rel="external">https://github.com/xuliqwertyu)中的“Web-static-server”文件夹都有</a></h2>
           
         
       
@@ -503,8 +426,8 @@ module.exports=app;
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
-               alt="John Doe" />
-          <p class="site-author-name" itemprop="name">John Doe</p>
+               alt="XL" />
+          <p class="site-author-name" itemprop="name">XL</p>
            
               <p class="site-description motion-element" itemprop="description"></p>
           
@@ -515,7 +438,7 @@ module.exports=app;
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -564,12 +487,12 @@ module.exports=app;
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">XL</span>
 </div>
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
