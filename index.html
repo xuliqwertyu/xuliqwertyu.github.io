@@ -194,7 +194,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Accueil
+            Startseite
           </a>
         </li>
       
@@ -204,7 +204,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -237,6 +237,133 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/26/jQuery_ajax/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="XL">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Xlever">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Xlever" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/26/jQuery_ajax/" itemprop="url">
+                  jQuery封装的ajax应用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-26T16:43:07+08:00">
+                2017-02-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="ajax的简易方法："><a href="#ajax的简易方法：" class="headerlink" title="ajax的简易方法："></a>ajax的简易方法：</h2><p>get请求<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.get(url,data,callback,type)</div></pre></td></tr></table></figure></p>
+<p>url        请求的地址<br>data    需要发送的参数{key:value}<br>callback    请求成功时的回调函数<br>type    指定返回内容的格式(xml、html、script、json、string)</p>
+<h3 id="专门加载html文件，并将html代码插入到元素中"><a href="#专门加载html文件，并将html代码插入到元素中" class="headerlink" title="专门加载html文件，并将html代码插入到元素中"></a>专门加载html文件，并将html代码插入到元素中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(seletor).load(url)</div></pre></td></tr></table></figure>
+<h3 id="专门加载script脚本文件"><a href="#专门加载script脚本文件" class="headerlink" title="专门加载script脚本文件"></a>专门加载script脚本文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.getScript(url, callback)</div></pre></td></tr></table></figure>
+<h3 id="专门加载json数据"><a href="#专门加载json数据" class="headerlink" title="专门加载json数据"></a>专门加载json数据</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$.getJSON(url, callback)</div><div class="line">$.post(url, data, callback, type)</div></pre></td></tr></table></figure>
+<h2 id="常用格式"><a href="#常用格式" class="headerlink" title="常用格式"></a>常用格式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">		url: url,</div><div class="line">		type: get,</div><div class="line">		data: &#123;&#125;, //要发送到服务器的数据</div><div class="line">		dataType : //预期服务器返回的数据类型</div><div class="line">		success : callback //(返回的数据, 返回状态的文字说明, 请求状态信息)</div><div class="line">		error: callback //(请求状态信息，返回状态的文字说明，错误信息说明)</div><div class="line">		&#125;)</div></pre></td></tr></table></figure>
+<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">		type: &quot;post&quot;,</div><div class="line">		url: &quot;php/login.php&quot;,</div><div class="line">		data: &#123;&quot;userName&quot;: &quot;admin&quot;, &quot;passWord&quot;: &quot;123456&quot;&#125;,</div><div class="line">		dataType : &quot;json&quot;,</div><div class="line">		success : function(result)&#123;</div><div class="line">			//result = JSON.parse(result);</div><div class="line">			if(result.status == 200)&#123;</div><div class="line">				//location.href = &quot;index.html&quot;;</div><div class="line">				alert(&quot;成功&quot;);</div><div class="line">			&#125;else&#123;</div><div class="line">				</div><div class="line">			&#125;</div><div class="line">		&#125;,</div><div class="line">		error: function()&#123;</div><div class="line">			alert(&quot;失败&quot;);</div><div class="line">		&#125;</div><div class="line">	&#125;)</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -287,7 +414,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posté le</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-25T12:09:15+08:00">
                 2017-02-25
@@ -442,8 +569,8 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">articles</span>
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -497,11 +624,11 @@
 
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  Thème -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>
