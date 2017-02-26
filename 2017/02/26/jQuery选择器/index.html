@@ -87,22 +87,22 @@
 
 
 
-<meta name="description" content="ajax的简易方法：get请求1$.get(url,data,callback,type)
-url        请求的地址data    需要发送的参数{key:value}callback    请求成功时的回调函数type    指定返回内容的格式(xml、html、script、json、string)
-专门加载html文件，并将html代码插入到元素中1$(seletor).load(u">
+<meta name="description" content="基本选择器标签选择器：$(&amp;quot;p&amp;quot;)类选择器：$(&amp;quot;.intro&amp;quot;)ID选择器：$(&amp;quot;#intro&amp;quot;)， 只能选择一个元素
+群组选择器：$(&amp;quot;div, span, p&amp;quot;) 并集，选取所有的DIV SPAN P标签交集选择器：$(&amp;quot;p.p1&amp;quot;) 交集，选取标签名为P并且类名为p1的标签
+全局选择器：$(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery封装的ajax应用">
-<meta property="og:url" content="http://yoursite.com/2017/02/26/jQuery_ajax/index.html">
+<meta property="og:title" content="jQuery选择器">
+<meta property="og:url" content="http://yoursite.com/2017/02/26/jQuery选择器/index.html">
 <meta property="og:site_name" content="Xlever">
-<meta property="og:description" content="ajax的简易方法：get请求1$.get(url,data,callback,type)
-url        请求的地址data    需要发送的参数{key:value}callback    请求成功时的回调函数type    指定返回内容的格式(xml、html、script、json、string)
-专门加载html文件，并将html代码插入到元素中1$(seletor).load(u">
-<meta property="og:updated_time" content="2017-02-26T14:08:10.423Z">
+<meta property="og:description" content="基本选择器标签选择器：$(&amp;quot;p&amp;quot;)类选择器：$(&amp;quot;.intro&amp;quot;)ID选择器：$(&amp;quot;#intro&amp;quot;)， 只能选择一个元素
+群组选择器：$(&amp;quot;div, span, p&amp;quot;) 并集，选取所有的DIV SPAN P标签交集选择器：$(&amp;quot;p.p1&amp;quot;) 交集，选取标签名为P并且类名为p1的标签
+全局选择器：$(">
+<meta property="og:updated_time" content="2017-02-26T14:07:38.418Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jQuery封装的ajax应用">
-<meta name="twitter:description" content="ajax的简易方法：get请求1$.get(url,data,callback,type)
-url        请求的地址data    需要发送的参数{key:value}callback    请求成功时的回调函数type    指定返回内容的格式(xml、html、script、json、string)
-专门加载html文件，并将html代码插入到元素中1$(seletor).load(u">
+<meta name="twitter:title" content="jQuery选择器">
+<meta name="twitter:description" content="基本选择器标签选择器：$(&amp;quot;p&amp;quot;)类选择器：$(&amp;quot;.intro&amp;quot;)ID选择器：$(&amp;quot;#intro&amp;quot;)， 只能选择一个元素
+群组选择器：$(&amp;quot;div, span, p&amp;quot;) 并集，选取所有的DIV SPAN P标签交集选择器：$(&amp;quot;p.p1&amp;quot;) 交集，选取标签名为P并且类名为p1的标签
+全局选择器：$(">
 
 
 
@@ -130,13 +130,13 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/02/26/jQuery_ajax/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/02/26/jQuery选择器/"/>
 
 
 
 
 
-  <title> jQuery封装的ajax应用 | Xlever </title>
+  <title> jQuery选择器 | Xlever </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -255,7 +255,7 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/26/jQuery_ajax/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/26/jQuery选择器/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="XL">
@@ -279,7 +279,7 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
             
             
               
-                jQuery封装的ajax应用
+                jQuery选择器
               
             
           </h1>
@@ -294,7 +294,7 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-26T16:43:07+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-26T21:18:18+08:00">
                 2017-02-26
               </time>
             
@@ -330,13 +330,33 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
       
 
       
-        <h2 id="ajax的简易方法："><a href="#ajax的简易方法：" class="headerlink" title="ajax的简易方法："></a>ajax的简易方法：</h2><p>get请求<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.get(url,data,callback,type)</div></pre></td></tr></table></figure></p>
-<p>url        请求的地址<br>data    需要发送的参数{key:value}<br>callback    请求成功时的回调函数<br>type    指定返回内容的格式(xml、html、script、json、string)</p>
-<h3 id="专门加载html文件，并将html代码插入到元素中"><a href="#专门加载html文件，并将html代码插入到元素中" class="headerlink" title="专门加载html文件，并将html代码插入到元素中"></a>专门加载html文件，并将html代码插入到元素中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(seletor).load(url)</div></pre></td></tr></table></figure>
-<h3 id="专门加载script脚本文件"><a href="#专门加载script脚本文件" class="headerlink" title="专门加载script脚本文件"></a>专门加载script脚本文件<a id="more"></a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.getScript(url, callback)</div></pre></td></tr></table></figure>
-<h3 id="专门加载json数据"><a href="#专门加载json数据" class="headerlink" title="专门加载json数据"></a>专门加载json数据</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$.getJSON(url, callback)</div><div class="line">$.post(url, data, callback, type)</div></pre></td></tr></table></figure>
-<h2 id="常用格式"><a href="#常用格式" class="headerlink" title="常用格式"></a>常用格式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">		url: url,</div><div class="line">		type: get,</div><div class="line">		data: &#123;&#125;, //要发送到服务器的数据</div><div class="line">		dataType : //预期服务器返回的数据类型</div><div class="line">		success : callback //(返回的数据, 返回状态的文字说明, 请求状态信息)</div><div class="line">		error: callback //(请求状态信息，返回状态的文字说明，错误信息说明)</div><div class="line">		&#125;)</div></pre></td></tr></table></figure>
-<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">		type: &quot;post&quot;,</div><div class="line">		url: &quot;php/login.php&quot;,</div><div class="line">		data: &#123;&quot;userName&quot;: &quot;admin&quot;, &quot;passWord&quot;: &quot;123456&quot;&#125;,</div><div class="line">		dataType : &quot;json&quot;,</div><div class="line">		success : function(result)&#123;</div><div class="line">			//result = JSON.parse(result);</div><div class="line">			if(result.status == 200)&#123;</div><div class="line">				//location.href = &quot;index.html&quot;;</div><div class="line">				alert(&quot;成功&quot;);</div><div class="line">			&#125;else&#123;</div><div class="line">				</div><div class="line">			&#125;</div><div class="line">		&#125;,</div><div class="line">		error: function()&#123;</div><div class="line">			alert(&quot;失败&quot;);</div><div class="line">		&#125;</div><div class="line">	&#125;)</div></pre></td></tr></table></figure></p>
+        <h2 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h2><p>标签选择器：<code>$(&quot;p&quot;)</code><br>类选择器：<code>$(&quot;.intro&quot;)</code><br>ID选择器：<code>$(&quot;#intro&quot;)</code>， 只能选择一个元素</p>
+<p>群组选择器：<code>$(&quot;div, span, p&quot;)</code> 并集，选取所有的DIV SPAN P标签<br>交集选择器：<code>$(&quot;p.p1&quot;)</code> 交集，选取标签名为P并且类名为p1的标签</p>
+<p>全局选择器：<code>$(&quot;*&quot;)</code> 全局选择器，选择页面中所有元素</p>
+<p>特殊、常用的几个选择器<br><code>$(document)</code> 选取当前的文档元素<br><code>$(window)</code>  选取当前页面的窗口对象<br><code>$(&quot;body&quot;)</code> 选取body元素<br><code>$(this)</code>  选取当前域的自身对象</p>
+<p>标签元素要加双引号，不是标签元素就不要加双引号</p>
+<h2 id="层次选择器"><a href="#层次选择器" class="headerlink" title="层次选择器"></a>层次选择器<a id="more"></a></h2><p>后代选择器：<code>$(&quot;#box span&quot;)</code><br>子级选择器：<code>$(&quot;#box&gt;span&quot;)</code><br>紧邻同辈选择器：<code>$(&quot;#box+p&quot;)</code> 选择#box后面的一个P标签（只能选择一个）<br>相邻同辈选择器：<code>$(&quot;#box~p&quot;)</code> 选择#box后面的所有P标签</p>
+<h2 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h2><p><code>$(&quot;[name]&quot;)</code>  选择所有包含name属性的标签<br><code>$(&quot;[name=user]&quot;)</code> 选择所有包含name属性值为user的标签<br><code>$(&quot;[name!=user]&quot;)</code> 选择所有name属性不等于user的标签，包含了没有name属性的所有标签<br><code>$(&quot;[name^=user]&quot;)</code> 选择所有name属性以user开头的元素<br><code>$(&quot;[name$=user]&quot;)</code> 选择所有name属性以user结尾的元素<br><code>$(&quot;[name][id]&quot;)</code> 选择同时具有name和id属性的元素</p>
+<h2 id="过滤选择器"><a href="#过滤选择器" class="headerlink" title="过滤选择器"></a>过滤选择器</h2><p>:first   选择集合中的第一个元素<br>例:<code>$(&quot;ul li:first&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:last    选择集合中的最后一个元素<br>例:<code>$(&quot;ul li:last&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:even    选择集合中的偶数行元素，从0开始，0是偶数<br>例:<code>$(&quot;ul li:even&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:odd     选择集合中的奇数行元素<br>例:<code>$(&quot;ul li:odd&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:eq(n)   选择集合中的第n个元素，从0开始<br>例:<code>$(&quot;ul li:eq(3)&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:gt(n)   选择集合中大于n（第n个元素后面的）所有元素<br>例:<code>$(&quot;ul li:gt(3)&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:lt(n)   选择集合中小于n（第n个元素前面的）所有元素<br>例:<code>$(&quot;ul li:lt(3)&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:not(selector)   选择不包含selector的元素<br>例:<code>$(&quot;ul li:not(:eq(3))&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<pre><code>`$(&quot;ul li:not(.in)&quot;).css(&quot;color&quot;, &quot;red&quot;);`
+</code></pre><p>:header  选择所有的h1~h6元素<br>例:<code>$(&quot;div :header&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:visible    选择所有可见元素<br>例:<code>$(&quot;:visible&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:hidden     选择所有不可见元素<br>例:<code>$(&quot;:hidden&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:first-child   选择列表里面的第一个子元素<br>例:<code>$(&quot;dl dd:first-child&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:last-child    选择列表里面的最后一个子元素<br>例:<code>$(&quot;dl dd:last-child&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:nth-child(n)  选择列表里面的第n个子元素（从1开始）<br>例:<code>$(&quot;dl dd:nth-child(3)&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:nth-last-child(n)  选择列表里面的倒数第n个子元素（从1开始）<br>例:<code>$(&quot;dl dd:nth-last-child(3)&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:first-of-type  选择列表里面匹配类型的第一个元素<br>例:<code>$(&quot;dl dd:first-of-type&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:last-of-type   选择列表里面匹配类型的最后一个元素<br>例:<code>$(&quot;dl dd:last-of-type&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:nth-of-type(n)  选择列表里面匹配类型的第n个元素（从1开始）<br>例:<code>$(&quot;dl dd:nth-of-type(3)&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
+<p>:nth-last-of-type(n)  选择列表里面匹配类型的倒数第n个元素（从1开始）<br>例:<code>$(&quot;dl dd:nth-last-of-type(2)&quot;).css(&quot;color&quot;, &quot;red&quot;);</code></p>
 
       
     </div>
@@ -367,8 +387,8 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/25/nodejs/" rel="next" title="git+nodejs快速搭建web静态服务器">
-                <i class="fa fa-chevron-left"></i> git+nodejs快速搭建web静态服务器
+              <a href="/2017/02/26/jQuery_ajax/" rel="next" title="jQuery封装的ajax应用">
+                <i class="fa fa-chevron-left"></i> jQuery封装的ajax应用
               </a>
             
           </div>
@@ -376,10 +396,6 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/26/jQuery选择器/" rel="prev" title="jQuery选择器">
-                jQuery选择器 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -497,7 +513,7 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ajax的简易方法："><span class="nav-number">1.</span> <span class="nav-text">ajax的简易方法：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#专门加载html文件，并将html代码插入到元素中"><span class="nav-number">1.1.</span> <span class="nav-text">专门加载html文件，并将html代码插入到元素中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#专门加载script脚本文件"><span class="nav-number">1.2.</span> <span class="nav-text">专门加载script脚本文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#专门加载json数据"><span class="nav-number">1.3.</span> <span class="nav-text">专门加载json数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用格式"><span class="nav-number">2.</span> <span class="nav-text">常用格式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本选择器"><span class="nav-number">1.</span> <span class="nav-text">基本选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#层次选择器"><span class="nav-number">2.</span> <span class="nav-text">层次选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性选择器"><span class="nav-number">3.</span> <span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过滤选择器"><span class="nav-number">4.</span> <span class="nav-text">过滤选择器</span></a></li></ol></div>
             
 
           </div>
