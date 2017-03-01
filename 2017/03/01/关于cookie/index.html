@@ -87,22 +87,25 @@
 
 
 
-<meta name="description" content="ajax的简易方法：get请求1$.get(url,data,callback,type)
-url        请求的地址data    需要发送的参数{key:value}callback    请求成功时的回调函数type    指定返回内容的格式(xml、html、script、json、string)
-专门加载html文件，并将html代码插入到元素中1$(seletor).load(u">
+<meta name="description" content="cookie的概念cookie是存储于访问者的计算机中的变量，每当一台计算机通过浏览器请求某个页面得时候，就会发送这个cookie，主要用于保存登陆信息。
+cookie的工作原理cookie是存于用户硬盘的一个文件，这个文件通常对应于一个域名，当浏览器再次访问这个域名时，便可获取这个cookie。cookie可以跨越一个域名下面的多个网页，但是不能跨域名也不能跨浏览器。
+cookie的缺点
+内存太">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery封装的ajax应用">
-<meta property="og:url" content="http://yoursite.com/2017/02/26/jQuery_ajax/index.html">
+<meta property="og:title" content="Xlever">
+<meta property="og:url" content="http://yoursite.com/2017/03/01/关于cookie/index.html">
 <meta property="og:site_name" content="Xlever">
-<meta property="og:description" content="ajax的简易方法：get请求1$.get(url,data,callback,type)
-url        请求的地址data    需要发送的参数{key:value}callback    请求成功时的回调函数type    指定返回内容的格式(xml、html、script、json、string)
-专门加载html文件，并将html代码插入到元素中1$(seletor).load(u">
-<meta property="og:updated_time" content="2017-02-26T14:08:10.423Z">
+<meta property="og:description" content="cookie的概念cookie是存储于访问者的计算机中的变量，每当一台计算机通过浏览器请求某个页面得时候，就会发送这个cookie，主要用于保存登陆信息。
+cookie的工作原理cookie是存于用户硬盘的一个文件，这个文件通常对应于一个域名，当浏览器再次访问这个域名时，便可获取这个cookie。cookie可以跨越一个域名下面的多个网页，但是不能跨域名也不能跨浏览器。
+cookie的缺点
+内存太">
+<meta property="og:updated_time" content="2017-03-01T10:55:49.744Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jQuery封装的ajax应用">
-<meta name="twitter:description" content="ajax的简易方法：get请求1$.get(url,data,callback,type)
-url        请求的地址data    需要发送的参数{key:value}callback    请求成功时的回调函数type    指定返回内容的格式(xml、html、script、json、string)
-专门加载html文件，并将html代码插入到元素中1$(seletor).load(u">
+<meta name="twitter:title" content="Xlever">
+<meta name="twitter:description" content="cookie的概念cookie是存储于访问者的计算机中的变量，每当一台计算机通过浏览器请求某个页面得时候，就会发送这个cookie，主要用于保存登陆信息。
+cookie的工作原理cookie是存于用户硬盘的一个文件，这个文件通常对应于一个域名，当浏览器再次访问这个域名时，便可获取这个cookie。cookie可以跨越一个域名下面的多个网页，但是不能跨域名也不能跨浏览器。
+cookie的缺点
+内存太">
 
 
 
@@ -130,13 +133,13 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/02/26/jQuery_ajax/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/01/关于cookie/"/>
 
 
 
 
 
-  <title> jQuery封装的ajax应用 | Xlever </title>
+  <title>  | Xlever </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -255,7 +258,7 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/26/jQuery_ajax/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/01/关于cookie/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="XL">
@@ -279,7 +282,7 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
             
             
               
-                jQuery封装的ajax应用
+                
               
             
           </h1>
@@ -294,8 +297,8 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-26T16:43:07+08:00">
-                2017-02-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-01T17:34:12+08:00">
+                2017-03-01
               </time>
             
 
@@ -330,13 +333,24 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
       
 
       
-        <h2 id="ajax的简易方法："><a href="#ajax的简易方法：" class="headerlink" title="ajax的简易方法："></a>ajax的简易方法：</h2><p>get请求<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.get(url,data,callback,type)</div></pre></td></tr></table></figure></p>
-<p>url        请求的地址<br>data    需要发送的参数{key:value}<br>callback    请求成功时的回调函数<br>type    指定返回内容的格式(xml、html、script、json、string)</p>
-<h3 id="专门加载html文件，并将html代码插入到元素中"><a href="#专门加载html文件，并将html代码插入到元素中" class="headerlink" title="专门加载html文件，并将html代码插入到元素中"></a>专门加载html文件，并将html代码插入到元素中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(seletor).load(url)</div></pre></td></tr></table></figure>
-<h3 id="专门加载script脚本文件"><a href="#专门加载script脚本文件" class="headerlink" title="专门加载script脚本文件"></a>专门加载script脚本文件<a id="more"></a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.getScript(url, callback)</div></pre></td></tr></table></figure>
-<h3 id="专门加载json数据"><a href="#专门加载json数据" class="headerlink" title="专门加载json数据"></a>专门加载json数据</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$.getJSON(url, callback)</div><div class="line">$.post(url, data, callback, type)</div></pre></td></tr></table></figure>
-<h2 id="常用格式"><a href="#常用格式" class="headerlink" title="常用格式"></a>常用格式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">		url: url,</div><div class="line">		type: get,</div><div class="line">		data: &#123;&#125;, //要发送到服务器的数据</div><div class="line">		dataType : //预期服务器返回的数据类型</div><div class="line">		success : callback //(返回的数据, 返回状态的文字说明, 请求状态信息)</div><div class="line">		error: callback //(请求状态信息，返回状态的文字说明，错误信息说明)</div><div class="line">		&#125;)</div></pre></td></tr></table></figure>
-<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">		type: &quot;post&quot;,</div><div class="line">		url: &quot;php/login.php&quot;,</div><div class="line">		data: &#123;&quot;userName&quot;: &quot;admin&quot;, &quot;passWord&quot;: &quot;123456&quot;&#125;,</div><div class="line">		dataType : &quot;json&quot;,</div><div class="line">		success : function(result)&#123;</div><div class="line">			//result = JSON.parse(result);</div><div class="line">			if(result.status == 200)&#123;</div><div class="line">				//location.href = &quot;index.html&quot;;</div><div class="line">				alert(&quot;成功&quot;);</div><div class="line">			&#125;else&#123;</div><div class="line">				</div><div class="line">			&#125;</div><div class="line">		&#125;,</div><div class="line">		error: function()&#123;</div><div class="line">			alert(&quot;失败&quot;);</div><div class="line">		&#125;</div><div class="line">	&#125;)</div></pre></td></tr></table></figure></p>
+        <h2 id="cookie的概念"><a href="#cookie的概念" class="headerlink" title="cookie的概念"></a>cookie的概念</h2><p>cookie是存储于访问者的计算机中的变量，每当一台计算机通过浏览器请求某个页面得时候，就会发送这个cookie，主要用于保存登陆信息。</p>
+<h2 id="cookie的工作原理"><a href="#cookie的工作原理" class="headerlink" title="cookie的工作原理"></a>cookie的工作原理</h2><p>cookie是存于用户硬盘的一个文件，这个文件通常对应于一个域名，当浏览器再次访问这个域名时，便可获取这个cookie。<br>cookie可以跨越一个域名下面的多个网页，但是不能跨域名也不能跨浏览器。</p>
+<h2 id="cookie的缺点"><a href="#cookie的缺点" class="headerlink" title="cookie的缺点"></a>cookie的缺点</h2><ul>
+<li>内存太小，大概只有4K</li>
+<li>cookie可能被禁用，当用户设置安全级别很高时，很可能会禁用浏览器的cookie功能</li>
+<li>cookie是与浏览器相关的，不同浏览器之间所保存的cookie不能相互访问</li>
+<li>cookie可能被删除，因为每个cookie都是硬盘上的一个文件，有被删除的风险</li>
+<li>cookie的安全性不高，所有cookie都是以纯文本的形式记录于文件中，因此如果要保存用户名密码等信息时，最好事先经过加密处理<h2 id="设置cookie"><a href="#设置cookie" class="headerlink" title="设置cookie"></a>设置cookie</h2>每个cookie都是一个名称/数值对的形式，将组好的字符串赋值给document.cookie<br>document.cookie与其他属性不同，改变它的赋值并不会丢失原来的值<br>在cookie设置的名和值中不能使用分号（;）、逗号（,）、等号（=）以及空格等特殊符号<br>在cookie的名称中很容易做到这点，但是我们要保存的值是不确定的，所以我们需要将值进行编码之后再存储<br>用escape()函数进行编码，将一些特殊符号以及中文转换成十六进制<br>取出值后使用unescape()进行解码<h2 id="获取cookie"><a href="#获取cookie" class="headerlink" title="获取cookie"></a>获取cookie</h2>通过document.cookie获取到以分号隔开的多个名/值对所组成的字符串<br>通过字符串的切割和截取获取到指定的信息<h2 id="cookie的生命周期"><a href="#cookie的生命周期" class="headerlink" title="cookie的生命周期"></a>cookie的生命周期</h2></li>
+<li>如果不设置cookie的过期时间，则表示这个cookie生命周期为浏览器的会话周期（当关闭浏览器后，cookie就被销毁了）。<br>这种生命周期为浏览器会话周期的cookie被称为会话cookie，会话cookie一般不保存在硬盘上而是保存在内存里。</li>
+<li>如果设置了过期时间，浏览器就会把cookie保存在硬盘上，关闭后再次打开浏览器，这些cookie依然有效直到超过设定的过期时间。<h3 id="如何设置过期时间？"><a href="#如何设置过期时间？" class="headerlink" title="如何设置过期时间？"></a>如何设置过期时间？</h3>通过expires设置cookie的过期时间</li>
+</ul>
+<p>例如要设置cookie的过期时间为10天</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var date=new Date(); //获取当前时间</div><div class="line">var expriesDays=10;</div><div class="line">date.setTime(date.getTime()+expiresDays*24*3600*1000); //将date设置为10天以后的时间</div><div class="line">document.cookie=&quot;userid=111;expires=&quot;+date.toGMTString(); //设置cookie过期时间</div></pre></td></tr></table></figure>
+<h2 id="删除cookie"><a href="#删除cookie" class="headerlink" title="删除cookie"></a>删除cookie</h2><p>删除一个cookie，可以将其过期时间设置为一个过去的时间<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var date =new Date();</div><div class="line">date.setTime(date.getTime() - 1000);</div><div class="line">document.cookie = &quot;userid=111; expires=&quot;+date.toGMTString();</div></pre></td></tr></table></figure></p>
+<h2 id="如何将数组和对象存入cookie？"><a href="#如何将数组和对象存入cookie？" class="headerlink" title="如何将数组和对象存入cookie？"></a>如何将数组和对象存入cookie？</h2><p>因为cookie里面只能存储字符串，所以如果要将数组和对象存入cookie，可以先将其转换成json字符串，再存入cookie</p>
+<p><code>JSON.stringify()</code></p>
+<p>取出来之后再将json格式字符串转换成对象</p>
+<p><code>JSON.parse()</code></p>
 
       
     </div>
@@ -367,8 +381,8 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/25/nodejs/" rel="next" title="git+nodejs快速搭建web静态服务器">
-                <i class="fa fa-chevron-left"></i> git+nodejs快速搭建web静态服务器
+              <a href="/2017/02/27/兼容性问题/" rel="next" title="IE兼容性问题">
+                <i class="fa fa-chevron-left"></i> IE兼容性问题
               </a>
             
           </div>
@@ -376,10 +390,6 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/26/jQuery选择器/" rel="prev" title="jQuery选择器">
-                jQuery选择器 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -490,7 +500,7 @@ url        请求的地址data    需要发送的参数{key:value}callback    �
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ajax的简易方法："><span class="nav-number">1.</span> <span class="nav-text">ajax的简易方法：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#专门加载html文件，并将html代码插入到元素中"><span class="nav-number">1.1.</span> <span class="nav-text">专门加载html文件，并将html代码插入到元素中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#专门加载script脚本文件"><span class="nav-number">1.2.</span> <span class="nav-text">专门加载script脚本文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#专门加载json数据"><span class="nav-number">1.3.</span> <span class="nav-text">专门加载json数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用格式"><span class="nav-number">2.</span> <span class="nav-text">常用格式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cookie的概念"><span class="nav-number">1.</span> <span class="nav-text">cookie的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cookie的工作原理"><span class="nav-number">2.</span> <span class="nav-text">cookie的工作原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cookie的缺点"><span class="nav-number">3.</span> <span class="nav-text">cookie的缺点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置cookie"><span class="nav-number">4.</span> <span class="nav-text">设置cookie</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取cookie"><span class="nav-number">5.</span> <span class="nav-text">获取cookie</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cookie的生命周期"><span class="nav-number">6.</span> <span class="nav-text">cookie的生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何设置过期时间？"><span class="nav-number">6.1.</span> <span class="nav-text">如何设置过期时间？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除cookie"><span class="nav-number">7.</span> <span class="nav-text">删除cookie</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何将数组和对象存入cookie？"><span class="nav-number">8.</span> <span class="nav-text">如何将数组和对象存入cookie？</span></a></li></ol></div>
             
 
           </div>
