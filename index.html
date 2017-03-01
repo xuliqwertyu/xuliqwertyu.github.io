@@ -273,7 +273,7 @@
               
                 
                 <a class="post-title-link" href="/2017/03/01/关于cookie/" itemprop="url">
-                  未命名
+                  关于Cookie
                 </a>
               
             
@@ -326,27 +326,21 @@
 
       
         
-          
-            <h2 id="cookie的概念"><a href="#cookie的概念" class="headerlink" title="cookie的概念"></a>cookie的概念</h2><p>cookie是存储于访问者的计算机中的变量，每当一台计算机通过浏览器请求某个页面得时候，就会发送这个cookie，主要用于保存登陆信息。</p>
+          <h2 id="cookie的概念"><a href="#cookie的概念" class="headerlink" title="cookie的概念"></a>cookie的概念</h2><p>cookie是存储于访问者的计算机中的变量，每当一台计算机通过浏览器请求某个页面得时候，就会发送这个cookie，主要用于保存登陆信息。</p>
 <h2 id="cookie的工作原理"><a href="#cookie的工作原理" class="headerlink" title="cookie的工作原理"></a>cookie的工作原理</h2><p>cookie是存于用户硬盘的一个文件，这个文件通常对应于一个域名，当浏览器再次访问这个域名时，便可获取这个cookie。<br>cookie可以跨越一个域名下面的多个网页，但是不能跨域名也不能跨浏览器。</p>
 <h2 id="cookie的缺点"><a href="#cookie的缺点" class="headerlink" title="cookie的缺点"></a>cookie的缺点</h2><ul>
 <li>内存太小，大概只有4K</li>
 <li>cookie可能被禁用，当用户设置安全级别很高时，很可能会禁用浏览器的cookie功能</li>
 <li>cookie是与浏览器相关的，不同浏览器之间所保存的cookie不能相互访问</li>
 <li>cookie可能被删除，因为每个cookie都是硬盘上的一个文件，有被删除的风险</li>
-<li>cookie的安全性不高，所有cookie都是以纯文本的形式记录于文件中，因此如果要保存用户名密码等信息时，最好事先经过加密处理<h2 id="设置cookie"><a href="#设置cookie" class="headerlink" title="设置cookie"></a>设置cookie</h2>每个cookie都是一个名称/数值对的形式，将组好的字符串赋值给document.cookie<br>document.cookie与其他属性不同，改变它的赋值并不会丢失原来的值<br>在cookie设置的名和值中不能使用分号（;）、逗号（,）、等号（=）以及空格等特殊符号<br>在cookie的名称中很容易做到这点，但是我们要保存的值是不确定的，所以我们需要将值进行编码之后再存储<br>用escape()函数进行编码，将一些特殊符号以及中文转换成十六进制<br>取出值后使用unescape()进行解码<h2 id="获取cookie"><a href="#获取cookie" class="headerlink" title="获取cookie"></a>获取cookie</h2>通过document.cookie获取到以分号隔开的多个名/值对所组成的字符串<br>通过字符串的切割和截取获取到指定的信息<h2 id="cookie的生命周期"><a href="#cookie的生命周期" class="headerlink" title="cookie的生命周期"></a>cookie的生命周期</h2></li>
-<li>如果不设置cookie的过期时间，则表示这个cookie生命周期为浏览器的会话周期（当关闭浏览器后，cookie就被销毁了）。<br>这种生命周期为浏览器会话周期的cookie被称为会话cookie，会话cookie一般不保存在硬盘上而是保存在内存里。</li>
-<li>如果设置了过期时间，浏览器就会把cookie保存在硬盘上，关闭后再次打开浏览器，这些cookie依然有效直到超过设定的过期时间。<h3 id="如何设置过期时间？"><a href="#如何设置过期时间？" class="headerlink" title="如何设置过期时间？"></a>如何设置过期时间？</h3>通过expires设置cookie的过期时间</li>
-</ul>
-<p>例如要设置cookie的过期时间为10天</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var date=new Date(); //获取当前时间</div><div class="line">var expriesDays=10;</div><div class="line">date.setTime(date.getTime()+expiresDays*24*3600*1000); //将date设置为10天以后的时间</div><div class="line">document.cookie=&quot;userid=111;expires=&quot;+date.toGMTString(); //设置cookie过期时间</div></pre></td></tr></table></figure>
-<h2 id="删除cookie"><a href="#删除cookie" class="headerlink" title="删除cookie"></a>删除cookie</h2><p>删除一个cookie，可以将其过期时间设置为一个过去的时间<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var date =new Date();</div><div class="line">date.setTime(date.getTime() - 1000);</div><div class="line">document.cookie = &quot;userid=111; expires=&quot;+date.toGMTString();</div></pre></td></tr></table></figure></p>
-<h2 id="如何将数组和对象存入cookie？"><a href="#如何将数组和对象存入cookie？" class="headerlink" title="如何将数组和对象存入cookie？"></a>如何将数组和对象存入cookie？</h2><p>因为cookie里面只能存储字符串，所以如果要将数组和对象存入cookie，可以先将其转换成json字符串，再存入cookie</p>
-<p><code>JSON.stringify()</code></p>
-<p>取出来之后再将json格式字符串转换成对象</p>
-<p><code>JSON.parse()</code></p>
-
-          
+<li>cookie的安全性不高，所有cookie都是以纯文本的形式记录于文件中，因此如果要保存用户名密码等信息时，最好事先经过加密处理<h2 id="设置cookie"><a href="#设置cookie" class="headerlink" title="设置cookie"></a>设置cookie
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/01/关于cookie/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

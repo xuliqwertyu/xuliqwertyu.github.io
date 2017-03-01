@@ -92,16 +92,16 @@ cookie的工作原理cookie是存于用户硬盘的一个文件，这个文件�
 cookie的缺点
 内存太">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Xlever">
+<meta property="og:title" content="关于Cookie">
 <meta property="og:url" content="http://yoursite.com/2017/03/01/关于cookie/index.html">
 <meta property="og:site_name" content="Xlever">
 <meta property="og:description" content="cookie的概念cookie是存储于访问者的计算机中的变量，每当一台计算机通过浏览器请求某个页面得时候，就会发送这个cookie，主要用于保存登陆信息。
 cookie的工作原理cookie是存于用户硬盘的一个文件，这个文件通常对应于一个域名，当浏览器再次访问这个域名时，便可获取这个cookie。cookie可以跨越一个域名下面的多个网页，但是不能跨域名也不能跨浏览器。
 cookie的缺点
 内存太">
-<meta property="og:updated_time" content="2017-03-01T10:55:49.744Z">
+<meta property="og:updated_time" content="2017-03-01T11:00:14.172Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xlever">
+<meta name="twitter:title" content="关于Cookie">
 <meta name="twitter:description" content="cookie的概念cookie是存储于访问者的计算机中的变量，每当一台计算机通过浏览器请求某个页面得时候，就会发送这个cookie，主要用于保存登陆信息。
 cookie的工作原理cookie是存于用户硬盘的一个文件，这个文件通常对应于一个域名，当浏览器再次访问这个域名时，便可获取这个cookie。cookie可以跨越一个域名下面的多个网页，但是不能跨域名也不能跨浏览器。
 cookie的缺点
@@ -139,7 +139,7 @@ cookie的缺点
 
 
 
-  <title>  | Xlever </title>
+  <title> 关于Cookie | Xlever </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -282,7 +282,7 @@ cookie的缺点
             
             
               
-                
+                关于Cookie
               
             
           </h1>
@@ -340,7 +340,7 @@ cookie的缺点
 <li>cookie可能被禁用，当用户设置安全级别很高时，很可能会禁用浏览器的cookie功能</li>
 <li>cookie是与浏览器相关的，不同浏览器之间所保存的cookie不能相互访问</li>
 <li>cookie可能被删除，因为每个cookie都是硬盘上的一个文件，有被删除的风险</li>
-<li>cookie的安全性不高，所有cookie都是以纯文本的形式记录于文件中，因此如果要保存用户名密码等信息时，最好事先经过加密处理<h2 id="设置cookie"><a href="#设置cookie" class="headerlink" title="设置cookie"></a>设置cookie</h2>每个cookie都是一个名称/数值对的形式，将组好的字符串赋值给document.cookie<br>document.cookie与其他属性不同，改变它的赋值并不会丢失原来的值<br>在cookie设置的名和值中不能使用分号（;）、逗号（,）、等号（=）以及空格等特殊符号<br>在cookie的名称中很容易做到这点，但是我们要保存的值是不确定的，所以我们需要将值进行编码之后再存储<br>用escape()函数进行编码，将一些特殊符号以及中文转换成十六进制<br>取出值后使用unescape()进行解码<h2 id="获取cookie"><a href="#获取cookie" class="headerlink" title="获取cookie"></a>获取cookie</h2>通过document.cookie获取到以分号隔开的多个名/值对所组成的字符串<br>通过字符串的切割和截取获取到指定的信息<h2 id="cookie的生命周期"><a href="#cookie的生命周期" class="headerlink" title="cookie的生命周期"></a>cookie的生命周期</h2></li>
+<li>cookie的安全性不高，所有cookie都是以纯文本的形式记录于文件中，因此如果要保存用户名密码等信息时，最好事先经过加密处理<h2 id="设置cookie"><a href="#设置cookie" class="headerlink" title="设置cookie"></a>设置cookie<a id="more"></a></h2>每个cookie都是一个名称/数值对的形式，将组好的字符串赋值给document.cookie<br>document.cookie与其他属性不同，改变它的赋值并不会丢失原来的值<br>在cookie设置的名和值中不能使用分号（;）、逗号（,）、等号（=）以及空格等特殊符号<br>在cookie的名称中很容易做到这点，但是我们要保存的值是不确定的，所以我们需要将值进行编码之后再存储<br>用escape()函数进行编码，将一些特殊符号以及中文转换成十六进制<br>取出值后使用unescape()进行解码<h2 id="获取cookie"><a href="#获取cookie" class="headerlink" title="获取cookie"></a>获取cookie</h2>通过document.cookie获取到以分号隔开的多个名/值对所组成的字符串<br>通过字符串的切割和截取获取到指定的信息<h2 id="cookie的生命周期"><a href="#cookie的生命周期" class="headerlink" title="cookie的生命周期"></a>cookie的生命周期</h2></li>
 <li>如果不设置cookie的过期时间，则表示这个cookie生命周期为浏览器的会话周期（当关闭浏览器后，cookie就被销毁了）。<br>这种生命周期为浏览器会话周期的cookie被称为会话cookie，会话cookie一般不保存在硬盘上而是保存在内存里。</li>
 <li>如果设置了过期时间，浏览器就会把cookie保存在硬盘上，关闭后再次打开浏览器，这些cookie依然有效直到超过设定的过期时间。<h3 id="如何设置过期时间？"><a href="#如何设置过期时间？" class="headerlink" title="如何设置过期时间？"></a>如何设置过期时间？</h3>通过expires设置cookie的过期时间</li>
 </ul>
