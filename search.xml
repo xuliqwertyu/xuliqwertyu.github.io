@@ -10,9 +10,9 @@
 
     
     <entry>
-      <title></title>
+      <title><![CDATA[IE兼容性问题]]></title>
       <url>%2F2017%2F02%2F27%2F%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98%2F</url>
-      <content type="text"><![CDATA[title: IE兼容性问题 tags: [兼容性，IE].box{background:#0066FF!important;background:#FF0000;} 读取前面那个，important具有优先级，但IE6不认.box1{background:#666666;_background:#FF0000} IE6读取后面那个，洽谈读取前面那个_background:#FF0000 只能IE6读取.box1{background:#666666;*background:#FF0000;} IE6+IE7能读取后面那个，其他读取前面那个*background:#FF0000 IE6和IE7都能读取*+html .box3{background:#FF0000} 这个只针对IE7，其他都读取不了*html .box4{background:#FF0000} 这个只针对IE6，其他都读取不了]]></content>
+      <content type="text"><![CDATA[.box{background:#0066FF!important;background:#FF0000;} 读取前面那个，important具有优先级，但IE6不认.box1{background:#666666;_background:#FF0000} IE6读取后面那个，洽谈读取前面那个_background:#FF0000 只能IE6读取.box1{background:#666666;*background:#FF0000;} IE6+IE7能读取后面那个，其他读取前面那个*background:#FF0000 IE6和IE7都能读取*+html .box3{background:#FF0000} 这个只针对IE7，其他都读取不了*html .box4{background:#FF0000} 这个只针对IE6，其他都读取不了]]></content>
     </entry>
 
     
