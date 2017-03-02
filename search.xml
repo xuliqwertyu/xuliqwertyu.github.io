@@ -3,20 +3,6 @@
   
     
     <entry>
-      <title><![CDATA[ooo]]></title>
-      <url>%2F2017%2F03%2F02%2Ftest%2F</url>
-      <content type="text"></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[xin]]></title>
-      <url>%2F2017%2F03%2F02%2F%E6%96%B0%E7%9A%84%2F</url>
-      <content type="text"></content>
-    </entry>
-
-    
-    <entry>
       <title><![CDATA[关于Cookie]]></title>
       <url>%2F2017%2F03%2F01%2F%E5%85%B3%E4%BA%8Ecookie%2F</url>
       <content type="text"><![CDATA[cookie的概念cookie是存储于访问者的计算机中的变量，每当一台计算机通过浏览器请求某个页面得时候，就会发送这个cookie，主要用于保存登陆信息。 cookie的工作原理cookie是存于用户硬盘的一个文件，这个文件通常对应于一个域名，当浏览器再次访问这个域名时，便可获取这个cookie。cookie可以跨越一个域名下面的多个网页，但是不能跨域名也不能跨浏览器。 cookie的缺点 内存太小，大概只有4K cookie可能被禁用，当用户设置安全级别很高时，很可能会禁用浏览器的cookie功能 cookie是与浏览器相关的，不同浏览器之间所保存的cookie不能相互访问 cookie可能被删除，因为每个cookie都是硬盘上的一个文件，有被删除的风险 cookie的安全性不高，所有cookie都是以纯文本的形式记录于文件中，因此如果要保存用户名密码等信息时，最好事先经过加密处理 设置cookie每个cookie都是一个名称/数值对的形式，将组好的字符串赋值给document.cookiedocument.cookie与其他属性不同，改变它的赋值并不会丢失原来的值在cookie设置的名和值中不能使用分号（;）、逗号（,）、等号（=）以及空格等特殊符号在cookie的名称中很容易做到这点，但是我们要保存的值是不确定的，所以我们需要将值进行编码之后再存储用escape()函数进行编码，将一些特殊符号以及中文转换成十六进制取出值后使用unescape()进行解码 获取cookie通过document.cookie获取到以分号隔开的多个名/值对所组成的字符串通过字符串的切割和截取获取到指定的信息 cookie的生命周期 如果不设置cookie的过期时间，则表示这个cookie生命周期为浏览器的会话周期（当关闭浏览器后，cookie就被销毁了）。这种生命周期为浏览器会话周期的cookie被称为会话cookie，会话cookie一般不保存在硬盘上而是保存在内存里。 如果设置了过期时间，浏览器就会把cookie保存在硬盘上，关闭后再次打开浏览器，这些cookie依然有效直到超过设定的过期时间。如何设置过期时间？通过expires设置cookie的过期时间 例如要设置cookie的过期时间为10天 1234var date=new Date(); //获取当前时间var expriesDays=10;date.setTime(date.getTime()+expiresDays*24*3600*1000); //将date设置为10天以后的时间document.cookie=&quot;userid=111;expires=&quot;+date.toGMTString(); //设置cookie过期时间 删除cookie删除一个cookie，可以将其过期时间设置为一个过去的时间123var date =new Date();date.setTime(date.getTime() - 1000);document.cookie = &quot;userid=111; expires=&quot;+date.toGMTString(); 如何将数组和对象存入cookie？因为cookie里面只能存储字符串，所以如果要将数组和对象存入cookie，可以先将其转换成json字符串，再存入cookie JSON.stringify() 取出来之后再将json格式字符串转换成对象 JSON.parse() 实例先创建两个按钮&lt;button id=&quot;btn01&quot;&gt;设置cookie&lt;/button&gt;&lt;button id=&quot;btn02&quot;&gt;删除cookie&lt;/button&gt;1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253var btn01 = document.getElementById(&quot;btn01&quot;); btn01.onclick = function()&#123; /** * 设置cookie的过期时间 */ //1、获取当前时间 var date =new Date(); var expiresDays = 10; //2、将date设置为10天以后的时间 // date.setTime(date.getTime() + expiresDays*24*3600*1000) //设置1分钟后过期 date.setTime(date.getTime() + 60*1000); //3、设置cookie过期时间 var arr = &#123; name: &quot;张三&quot;, age:20 &#125;; arr = JSON.stringify(arr); document.cookie = &quot;userid=&quot;+arr+&quot;; expires=&quot;+date.toGMTString(); &#125; //删除cookie var btn02 = document.getElementById(&quot;btn02&quot;); btn02.onclick = function()&#123; var date =new Date(); date.setTime(date.getTime() - 1000); document.cookie = &quot;userid=111; expires=&quot;+date.toGMTString(); &#125; //封装一个获取cookie的函数，传入名称，返回它的值 function getCookie(name)&#123; var strCookie = document.cookie; var arrCookie = strCookie.split(&quot;; &quot;); //console.log(arrCookie); for(var i in arrCookie)&#123; var arr = arrCookie[i].split(&quot;=&quot;); //console.log(arr); if(arr[0] == name)&#123; //return 之前进行解码 return unescape(arr[1]); break; &#125; &#125; &#125; var v = getCookie(&quot;userid&quot;); console.log(v);]]></content>
