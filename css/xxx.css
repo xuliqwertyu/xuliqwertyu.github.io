@@ -7,7 +7,7 @@
 }
 #header{
 	position: relative;
-	z-index: 10;
+	z-index: 9999;
 }
 #content{
 	position: relative;
