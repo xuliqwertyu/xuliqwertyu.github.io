@@ -4,15 +4,9 @@
 	right: 0;
 	top:0;
 	bottom: 0;
+	z-index: -1;
 }
-#header{
-	position: relative;
-	z-index: 9999;
-}
-#content{
-	position: relative;
-	z-index: 10;
-}
+
 #sidebar{
 	background: none;
 }
