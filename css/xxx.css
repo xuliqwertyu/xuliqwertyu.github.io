@@ -6,6 +6,7 @@
 	bottom: 0;
 	z-index: -1;
 	background: url("/images/abc.jpg") no-repeat;
+	background-size: cover;
 }
 
 #sidebar{
